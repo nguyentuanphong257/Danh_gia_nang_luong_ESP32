@@ -1,0 +1,4 @@
+#define I2C_PORT I2C_NUM_0
+#define I2C_SDA_PIN 21
+#define I2C_SCL_PIN 22
+#define I2C_FREQUENCY_HZ        100000

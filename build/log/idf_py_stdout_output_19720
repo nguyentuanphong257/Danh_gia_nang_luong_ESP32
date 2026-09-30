@@ -1,0 +1,474 @@
+Command: D:\ESP-IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:\ESP-IDF\Espressif\frameworks\esp-idf-v5.5.4\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\TUAN PHONG\Documents\Danh gia nang luong\ESP32\build\ESP32.elf C:\Users\TUAN PHONG\Documents\Danh gia nang luong\ESP32\build\bootloader\bootloader.elf --force-color -m 'D:\ESP-IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'D:\ESP-IDF\Espressif\frameworks\esp-idf-v5.5.4\tools\idf.py' '-p' 'COM4'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep 26 2026 01:02:55[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25b44h (154436) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=00035b6c vaddr=3ffbdb60 size=05cdch ( 23772) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=0003b850 vaddr=40080000 size=047c8h ( 18376) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=c58d4h (809172) map[0m
+[0;32mI (432) esp_image: segment 4: paddr=001058fc vaddr=400847c8 size=1b15ch (110940) load[0m
+[0;32mI (475) esp_image: segment 5: paddr=00120a60 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (491) boot: Disabling RNG early entropy source...[0m
+[0;32mI (502) cpu_start: Multicore app[0m
+[0;32mI (510) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (510) cpu_start: Pro cpu start user code[0m
+[0;32mI (510) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (512) app_init: Application information:[0m
+[0;32mI (516) app_init: Project name:     ESP32[0m
+[0;32mI (520) app_init: App version:      1[0m
+[0;32mI (523) app_init: Compile time:     Sep 26 2026 01:02:14[0m
+[0;32mI (528) app_init: ELF file SHA256:  ec8855429...[0m
+[0;32mI (533) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (536) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (540) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (544) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (548) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (554) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (559) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (564) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (570) heap_init: At 3FFC9398 len 00016C68 (91 KiB): DRAM[0m
+[0;32mI (575) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (580) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (586) heap_init: At 4009F924 len 000006DC (1 KiB): IRAM[0m
+[0;32mI (593) spi_flash: detected chip: generic[0m
+[0;32mI (595) spi_flash: flash io: dio[0m
+[0;32mI (599) coexist: coex firmware version: 093e3d2[0m
+[0;32mI (603) main_task: Started on CPU0[0m
+[0;32mI (613) main_task: Calling app_main()[0m
+[0;32mI (633) MAIN: ========================================[0m
+[0;32mI (633) MAIN: ESP32 POWER MODE TEST[0m
+[0;32mI (633) MAIN: ========================================[0m
+[0;32mI (643) BME680: BME680 Chip ID = 0x61[0m
+[0;32mI (643) BME680: Measurement configured: T=1x, P=1x, H=1x, Gas=OFF[0m
+[0;32mI (643) BME680: BME680 initialized successfully[0m
+[0;32mI (653) OLED: Initializing SH1106 OLED...[0m
+[0;32mI (983) OLED: OLED initialized successfully[0m
+[0;32mI (983) MAIN: Applying power mode...[0m
+
+========================================
+POWER MODE: M6
+========================================
+ESP32      : ACTIVE
+Wi-Fi      : ON
+Bluetooth  : ON
+BME680     : FORCED
+OLED       : ON
+========================================
+ESP32 power state: ACTIVE
+[0;32mI (1023) wifi:wifi driver task: 3ffcd894, prio:23, stack:6656, core=0[0m
+[0;32mI (1033) wifi:wifi firmware version: 0947e8b[0m
+[0;32mI (1033) wifi:wifi certification version: v7.0[0m
+[0;32mI (1033) wifi:config NVS flash: enabled[0m
+[0;32mI (1033) wifi:config nano formatting: disabled[0m
+[0;32mI (1033) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1043) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1043) wifi:Init management short buffer num: 32[0m
+[0;32mI (1053) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1053) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1063) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1063) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1073) wifi_init: rx ba win: 6[0m
+[0;32mI (1073) wifi_init: accept mbox: 6[0m
+[0;32mI (1073) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1073) wifi_init: udp mbox: 6[0m
+[0;32mI (1083) wifi_init: tcp mbox: 6[0m
+[0;32mI (1083) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1083) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1093) wifi_init: tcp mss: 1440[0m
+[0;32mI (1093) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1093) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1103) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1113) WIFI: Wi-Fi initialized successfully[0m
+[0;32mI (1113) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (1203) wifi:mode : sta (1c:c3:ab:c3:9f:d4)[0m
+[0;32mI (1203) wifi:enable tsf[0m
+[0;32mI (1203) WIFI: Wi-Fi started. Connecting to AP...[0m
+Wi-Fi turned on successfully
+[0;32mI (1203) BLUETOOTH: Initializing Bluetooth LE...[0m
+[0;32mI (1213) BTDM_INIT: BT controller compile version [83df000][0m
+[0;32mI (1223) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1223) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1233) BTDM_INIT: Using main XTAL as clock source[0m
+[0;32mI (1233) BTDM_INIT: Bluetooth MAC: 1c:c3:ab:c3:9f:d6[0m
+[0;32mI (1243) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1263) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1283) wifi:connected with Son Hai, aid = 25, channel 1, BW20, bssid = e4:77:27:c9:23:90[0m
+[0;32mI (1283) wifi:security: WPA2-PSK, phy: bgn, rssi: -65, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1283) wifi:pm start, type: 1[0m
+
+[0;32mI (1303) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1363) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1503) BLUETOOTH: BLE host task started[0m
+[0;32mI (1513) BLUETOOTH: Bluetooth LE initialized successfully[0m
+Bluetooth turned on successfully
+BME680: FORCED
+[0;32mI (1513) BME680: CTRL_MEAS before = 0x24[0m
+[0;32mI (1513) BME680: CTRL_MEAS after  = 0x25[0m
+[0;32mI (1523) BME680: BME680 mode changed to 1[0m
+OLED: ON
+[0;32mI (1523) MAIN: MQTT task started.[0m
+[0;32mI (1523) MAIN: Waiting 5 seconds for Wi-Fi connection...[0m
+[0;32mI (1533) MAIN: MQTT task created.[0m
+[0;32mI (1543) BLUETOOTH: BLE host synchronized[0m
+[0;32mI (1543) BLUETOOTH: BLE advertising data configured: ESP32-ENERGY[0m
+[0;32mI (1543) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1543) NimBLE: disc_mode=2[0m
+[0;32mI (1553) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1563) NimBLE: [0m
+
+[0;32mI (1563) BLUETOOTH: BLE advertising started: ESP32-ENERGY[0m
+[0;32mI (4713) esp_netif_handlers: sta ip: 192.168.1.68, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4713) WIFI: Wi-Fi connected. IP: 192.168.1.68[0m
+[0;32mI (6533) MAIN: Starting MQTT...[0m
+[0;32mI (6533) MQTT_MGR: MQTT client started.[0m
+[0;32mI (6533) MAIN: Waiting for MQTT Broker connection...[0m
+[0;32mI (10373) wifi:<ba-add>idx:0 (ifx:0, e4:77:27:c9:23:90), tid:0, ssn:5, winSize:64[0m
+[0;32mI (13853) MQTT_MGR: Đã kết nối tới HiveMQ Broker thành công.[0m
+[0;32mI (14033) MAIN: MQTT is ready. Starting periodic publish.[0m
+[0;32mI (14033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (14033) MAIN: MQTT publish successful.[0m
+[0;32mI (19033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (19033) MAIN: MQTT publish successful.[0m
+[0;32mI (24033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (24033) MAIN: MQTT publish successful.[0m
+[0;32mI (29033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (29033) MAIN: MQTT publish successful.[0m
+[0;32mI (34033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (34033) MAIN: MQTT publish successful.[0m
+[0;32mI (35563) wifi:<ba-add>idx:1 (ifx:0, e4:77:27:c9:23:90), tid:6, ssn:4, winSize:64[0m
+[0;32mI (39033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (39033) MAIN: MQTT publish successful.[0m
+[0;32mI (44033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (44033) MAIN: MQTT publish successful.[0m
+[0;32mI (49033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (49033) MAIN: MQTT publish successful.[0m
+[0;32mI (54033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (54033) MAIN: MQTT publish successful.[0m
+[0;32mI (59033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (59033) MAIN: MQTT publish successful.[0m
+[0;32mI (64033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (64033) MAIN: MQTT publish successful.[0m
+[0;32mI (69033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (69033) MAIN: MQTT publish successful.[0m
+[0;32mI (74033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (74033) MAIN: MQTT publish successful.[0m
+[0;32mI (79033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (79033) MAIN: MQTT publish successful.[0m
+[0;32mI (84033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (84033) MAIN: MQTT publish successful.[0m
+[0;32mI (89033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (89033) MAIN: MQTT publish successful.[0m
+[0;32mI (94033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (94033) MAIN: MQTT publish successful.[0m
+[0;32mI (99033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (99033) MAIN: MQTT publish successful.[0m
+[0;32mI (104033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (104033) MAIN: MQTT publish successful.[0m
+[0;32mI (109033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (109033) MAIN: MQTT publish successful.[0m
+[0;32mI (114033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (114033) MAIN: MQTT publish successful.[0m
+[0;32mI (119033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (119033) MAIN: MQTT publish successful.[0m
+[0;32mI (124033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (124033) MAIN: MQTT publish successful.[0m
+[0;32mI (129033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (129033) MAIN: MQTT publish successful.[0m
+[0;32mI (134033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (134033) MAIN: MQTT publish successful.[0m
+[0;32mI (139033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (139033) MAIN: MQTT publish successful.[0m
+[0;32mI (144033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (144033) MAIN: MQTT publish successful.[0m
+[0;32mI (149033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (149033) MAIN: MQTT publish successful.[0m
+[0;32mI (154033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (154033) MAIN: MQTT publish successful.[0m
+[0;32mI (159033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (159033) MAIN: MQTT publish successful.[0m
+[0;32mI (164033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (164033) MAIN: MQTT publish successful.[0m
+[0;32mI (169033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (169033) MAIN: MQTT publish successful.[0m
+[0;32mI (174033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (174033) MAIN: MQTT publish successful.[0m
+[0;32mI (179033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (179033) MAIN: MQTT publish successful.[0m
+[0;32mI (184033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (184033) MAIN: MQTT publish successful.[0m
+[0;32mI (189033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (189033) MAIN: MQTT publish successful.[0m
+[0;32mI (194033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (194033) MAIN: MQTT publish successful.[0m
+[0;32mI (199033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (199033) MAIN: MQTT publish successful.[0m
+[0;32mI (204033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (204033) MAIN: MQTT publish successful.[0m
+[0;32mI (209033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (209033) MAIN: MQTT publish successful.[0m
+[0;32mI (214033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (214033) MAIN: MQTT publish successful.[0m
+[0;32mI (219033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (219033) MAIN: MQTT publish successful.[0m
+[0;32mI (224033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (224033) MAIN: MQTT publish successful.[0m
+[0;32mI (229033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (229033) MAIN: MQTT publish successful.[0m
+[0;32mI (234033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (234033) MAIN: MQTT publish successful.[0m
+[0;32mI (239033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (239033) MAIN: MQTT publish successful.[0m
+[0;32mI (244033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (244033) MAIN: MQTT publish successful.[0m
+[0;32mI (249033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (249033) MAIN: MQTT publish successful.[0m
+[0;32mI (254033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (254033) MAIN: MQTT publish successful.[0m
+[0;32mI (259033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (259033) MAIN: MQTT publish successful.[0m
+[0;32mI (264033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (264033) MAIN: MQTT publish successful.[0m
+[0;32mI (269033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (269033) MAIN: MQTT publish successful.[0m
+[0;32mI (274033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (274033) MAIN: MQTT publish successful.[0m
+[0;32mI (279033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (279033) MAIN: MQTT publish successful.[0m
+[0;32mI (284033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (284033) MAIN: MQTT publish successful.[0m
+[0;32mI (289033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (289033) MAIN: MQTT publish successful.[0m
+[0;32mI (294033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (294033) MAIN: MQTT publish successful.[0m
+[0;32mI (299033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (299033) MAIN: MQTT publish successful.[0m
+[0;32mI (304033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (304033) MAIN: MQTT publish successful.[0m
+[0;32mI (309033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (309033) MAIN: MQTT publish successful.[0m
+[0;32mI (314033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (314033) MAIN: MQTT publish successful.[0m
+[0;32mI (319033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (319033) MAIN: MQTT publish successful.[0m
+[0;32mI (324033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (324033) MAIN: MQTT publish successful.[0m
+[0;32mI (329033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (329033) MAIN: MQTT publish successful.[0m
+[0;32mI (334033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (334033) MAIN: MQTT publish successful.[0m
+[0;32mI (339033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (339033) MAIN: MQTT publish successful.[0m
+[0;32mI (344033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (344033) MAIN: MQTT publish successful.[0m
+[0;32mI (349033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (349033) MAIN: MQTT publish successful.[0m
+[0;32mI (354033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (354033) MAIN: MQTT publish successful.[0m
+[0;32mI (359033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (359033) MAIN: MQTT publish successful.[0m
+[0;32mI (364033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (364033) MAIN: MQTT publish successful.[0m
+[0;32mI (369033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (369033) MAIN: MQTT publish successful.[0m
+[0;32mI (374033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (374033) MAIN: MQTT publish successful.[0m
+[0;32mI (379033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (379033) MAIN: MQTT publish successful.[0m
+[0;32mI (384033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (384033) MAIN: MQTT publish successful.[0m
+[0;32mI (389033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (389033) MAIN: MQTT publish successful.[0m
+[0;32mI (394033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (394033) MAIN: MQTT publish successful.[0m
+[0;32mI (399033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (399033) MAIN: MQTT publish successful.[0m
+[0;32mI (404033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (404033) MAIN: MQTT publish successful.[0m
+[0;32mI (409033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (409033) MAIN: MQTT publish successful.[0m
+[0;32mI (414033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (414033) MAIN: MQTT publish successful.[0m
+[0;32mI (419033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (419033) MAIN: MQTT publish successful.[0m
+[0;32mI (424033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (424033) MAIN: MQTT publish successful.[0m
+[0;32mI (429033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (429033) MAIN: MQTT publish successful.[0m
+[0;32mI (434033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (434033) MAIN: MQTT publish successful.[0m
+[0;32mI (439033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (439033) MAIN: MQTT publish successful.[0m
+[0;32mI (444033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (444033) MAIN: MQTT publish successful.[0m
+[0;32mI (449033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (449033) MAIN: MQTT publish successful.[0m
+[0;32mI (454033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (454033) MAIN: MQTT publish successful.[0m
+[0;32mI (459033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (459033) MAIN: MQTT publish successful.[0m
+[0;32mI (464033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (464033) MAIN: MQTT publish successful.[0m
+[0;32mI (469033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (469033) MAIN: MQTT publish successful.[0m
+[0;32mI (474033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (474033) MAIN: MQTT publish successful.[0m
+[0;32mI (479033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (479033) MAIN: MQTT publish successful.[0m
+[0;32mI (484033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (484033) MAIN: MQTT publish successful.[0m
+[0;32mI (489033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (489033) MAIN: MQTT publish successful.[0m
+[0;32mI (494033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (494033) MAIN: MQTT publish successful.[0m
+[0;32mI (499033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (499033) MAIN: MQTT publish successful.[0m
+[0;32mI (504033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (504033) MAIN: MQTT publish successful.[0m
+[0;32mI (509033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (509033) MAIN: MQTT publish successful.[0m
+[0;32mI (514033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (514033) MAIN: MQTT publish successful.[0m
+[0;32mI (519033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (519033) MAIN: MQTT publish successful.[0m
+[0;32mI (524033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (524033) MAIN: MQTT publish successful.[0m
+[0;32mI (529033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (529033) MAIN: MQTT publish successful.[0m
+[0;32mI (534033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (534033) MAIN: MQTT publish successful.[0m
+[0;32mI (539033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (539033) MAIN: MQTT publish successful.[0m
+[0;32mI (544033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (544033) MAIN: MQTT publish successful.[0m
+[0;32mI (549033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (549033) MAIN: MQTT publish successful.[0m
+[0;32mI (554033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (554033) MAIN: MQTT publish successful.[0m
+[0;32mI (559033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (559033) MAIN: MQTT publish successful.[0m
+[0;32mI (564033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (564033) MAIN: MQTT publish successful.[0m
+[0;32mI (569033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (569033) MAIN: MQTT publish successful.[0m
+[0;32mI (574033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (574033) MAIN: MQTT publish successful.[0m
+[0;32mI (579033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (579033) MAIN: MQTT publish successful.[0m
+[0;32mI (584033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (584033) MAIN: MQTT publish successful.[0m
+[0;32mI (589033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (589033) MAIN: MQTT publish successful.[0m
+[0;32mI (594033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (594033) MAIN: MQTT publish successful.[0m
+[0;32mI (599033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (599033) MAIN: MQTT publish successful.[0m
+[0;32mI (604033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (604033) MAIN: MQTT publish successful.[0m
+[0;32mI (609033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (609033) MAIN: MQTT publish successful.[0m
+[0;32mI (614033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (614033) MAIN: MQTT publish successful.[0m
+[0;32mI (619033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (619033) MAIN: MQTT publish successful.[0m
+[0;32mI (624033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (624033) MAIN: MQTT publish successful.[0m
+[0;32mI (629033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (629033) MAIN: MQTT publish successful.[0m
+[0;32mI (634033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (634033) MAIN: MQTT publish successful.[0m
+[0;32mI (639033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (639033) MAIN: MQTT publish successful.[0m
+[0;32mI (644033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (644033) MAIN: MQTT publish successful.[0m
+[0;32mI (649033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (649033) MAIN: MQTT publish successful.[0m
+[0;32mI (654033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (654033) MAIN: MQTT publish successful.[0m
+[0;32mI (659033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (659033) MAIN: MQTT publish successful.[0m
+[0;32mI (664033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (664033) MAIN: MQTT publish successful.[0m
+[0;32mI (669033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (669033) MAIN: MQTT publish successful.[0m
+[0;32mI (674033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (674033) MAIN: MQTT publish successful.[0m
+[0;32mI (679033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (679033) MAIN: MQTT publish successful.[0m
+[0;32mI (684033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (684033) MAIN: MQTT publish successful.[0m
+[0;32mI (689033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (689033) MAIN: MQTT publish successful.[0m
+[0;32mI (694033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (694033) MAIN: MQTT publish successful.[0m
+[0;32mI (699033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (699033) MAIN: MQTT publish successful.[0m
+[0;32mI (704033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (704033) MAIN: MQTT publish successful.[0m
+[0;32mI (709033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (709033) MAIN: MQTT publish successful.[0m
+[0;32mI (714033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (714033) MAIN: MQTT publish successful.[0m
+[0;32mI (719033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (719033) MAIN: MQTT publish successful.[0m
+[0;32mI (724033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (724033) MAIN: MQTT publish successful.[0m
+[0;32mI (729033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (729033) MAIN: MQTT publish successful.[0m
+[0;32mI (734033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (734033) MAIN: MQTT publish successful.[0m
+[0;32mI (739033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (739033) MAIN: MQTT publish successful.[0m
+[0;32mI (744033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (744033) MAIN: MQTT publish successful.[0m
+[0;32mI (749033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (749033) MAIN: MQTT publish successful.[0m
+[0;32mI (754033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (754033) MAIN: MQTT publish successful.[0m
+[0;32mI (759033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (759033) MAIN: MQTT publish successful.[0m
+[0;32mI (764033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (764033) MAIN: MQTT publish successful.[0m
+[0;32mI (769033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (769033) MAIN: MQTT publish successful.[0m
+[0;32mI (774033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (774033) MAIN: MQTT publish successful.[0m
+[0;32mI (779033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (779033) MAIN: MQTT publish successful.[0m
+[0;32mI (784033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (784033) MAIN: MQTT publish successful.[0m
+[0;32mI (789033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (789033) MAIN: MQTT publish successful.[0m
+[0;32mI (794033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (794033) MAIN: MQTT publish successful.[0m
+[0;32mI (799033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (799033) MAIN: MQTT publish successful.[0m
+[0;32mI (804033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (804033) MAIN: MQTT publish successful.[0m
+[0;32mI (809033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (809033) MAIN: MQTT publish successful.[0m
+[0;32mI (814033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (814033) MAIN: MQTT publish successful.[0m
+[0;32mI (819033) MQTT_MGR: Đẩy dữ liệu thành công lên topic [vias/air_monitor/data], msg_id=0[0m
+[0;32mI (819033) MAIN: MQTT publish successful.[0m

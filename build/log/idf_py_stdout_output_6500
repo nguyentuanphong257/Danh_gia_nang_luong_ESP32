@@ -1,0 +1,98 @@
+Command: D:\ESP-IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:\ESP-IDF\Espressif\frameworks\esp-idf-v5.5.4\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\TUAN PHONG\Documents\Danh gia nang luong\ESP32\build\ESP32.elf C:\Users\TUAN PHONG\Documents\Danh gia nang luong\ESP32\build\bootloader\bootloader.elf --force-color -m 'D:\ESP-IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'D:\ESP-IDF\Espressif\frameworks\esp-idf-v5.5.4\tools\idf.py' '-p' 'COM4'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep 26 2026 01:02:55[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26d34h (159028) map[0m
+[0;32mI (141) esp_image: segment 1: paddr=00036d5c vaddr=3ffbdb60 size=05cdch ( 23772) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0003ca40 vaddr=40080000 size=035d8h ( 13784) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=c62d8h (811736) map[0m
+[0;32mI (433) esp_image: segment 4: paddr=00106300 vaddr=400835d8 size=1c34ch (115532) load[0m
+[0;32mI (478) esp_image: segment 5: paddr=00122654 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (493) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (494) boot: Disabling RNG early entropy source...[0m
+[0;32mI (504) cpu_start: Multicore app[0m
+[0;32mI (512) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (513) cpu_start: Pro cpu start user code[0m
+[0;32mI (513) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (515) app_init: Application information:[0m
+[0;32mI (518) app_init: Project name:     ESP32[0m
+[0;32mI (522) app_init: App version:      1[0m
+[0;32mI (526) app_init: Compile time:     Sep 26 2026 01:02:14[0m
+[0;32mI (531) app_init: ELF file SHA256:  417c24fa8...[0m
+[0;32mI (535) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (539) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (543) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (547) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (551) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (557) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (562) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (567) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (572) heap_init: At 3FFC9398 len 00016C68 (91 KiB): DRAM[0m
+[0;32mI (577) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (583) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (588) heap_init: At 4009F924 len 000006DC (1 KiB): IRAM[0m
+[0;32mI (595) spi_flash: detected chip: generic[0m
+[0;32mI (597) spi_flash: flash io: dio[0m
+[0;32mI (601) coexist: coex firmware version: 093e3d2[0m
+[0;32mI (605) main_task: Started on CPU0[0m
+[0;32mI (615) main_task: Calling app_main()[0m
+[0;32mI (635) MAIN: ========================================[0m
+[0;32mI (635) MAIN: ESP32 POWER MODE TEST[0m
+[0;32mI (635) MAIN: ========================================[0m
+[0;32mI (645) BME680: BME680 Chip ID = 0x61[0m
+[0;32mI (645) BME680: Measurement configured: T=1x, P=1x, H=1x, Gas=OFF[0m
+[0;32mI (645) BME680: BME680 initialized successfully[0m
+[0;32mI (655) OLED: Initializing SH1106 OLED...[0m
+[0;32mI (985) OLED: OLED initialized successfully[0m
+[0;32mI (985) MAIN: Applying power mode...[0m
+
+========================================
+POWER MODE: M4
+========================================
+ESP32      : ACTIVE
+Wi-Fi      : OFF
+Bluetooth  : ON
+BME680     : FORCED
+OLED       : ON
+========================================
+ESP32 power state: ACTIVE
+Wi-Fi turned off successfully
+[0;32mI (1015) BLUETOOTH: Initializing Bluetooth LE...[0m
+[0;32mI (1015) BTDM_INIT: BT controller compile version [83df000][0m
+[0;32mI (1025) BTDM_INIT: Using main XTAL as clock source[0m
+[0;32mI (1025) BTDM_INIT: Bluetooth MAC: 1c:c3:ab:c3:9f:d6[0m
+[0;32mI (1035) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (1345) BLUETOOTH: BLE host task started[0m
+[0;32mI (1355) BLUETOOTH: Bluetooth LE initialized successfully[0m
+Bluetooth turned on successfully
+BME680: FORCED
+[0;32mI (1355) BME680: CTRL_MEAS before = 0x24[0m
+[0;32mI (1365) BME680: CTRL_MEAS after  = 0x25[0m
+[0;32mI (1365) BME680: BME680 mode changed to 1[0m
+[0;32mI (1395) BLUETOOTH: BLE host synchronized[0m
+[0;32mI (1395) BLUETOOTH: BLE advertising data configured: ESP32-ENERGY[0m
+[0;32mI (1405) BLUETOOTH: BLE advertising started: ESP32-ENERGY[0m
+[0;32mI (1435) OLED: OLED displaying mode M4[0m
+OLED turned on and displaying M4
+[0;32mI (1435) MAIN: MQTT is disabled for this power mode.[0m
